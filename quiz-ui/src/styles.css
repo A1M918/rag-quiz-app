@@ -1,0 +1,103 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #a7b1c6;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  color: #000;
+}
+
+/* Root layout */
+.app-root {
+  min-height: 100svh; /* NOT 100vh */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.exam-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 40px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.exam {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Exam card */
+.exam-card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff8f8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.progress {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.question h2 {
+  font-size: 1.1rem;
+}
+
+.option {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.option input {
+  margin-top: 4px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.boe {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  font-size: 0.9rem;
+}
