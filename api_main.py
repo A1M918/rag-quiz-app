@@ -97,5 +97,16 @@ app.mount(
 )
 
 
+import uvicorn
 
-# uvicorn main:app --host 192.168.0.70 --port 8900
+if __name__ == "__main__":
+    uvicorn.run(
+        "api_main:app",
+        host="192.168.0.27",
+        port=8900,
+        ssl_certfile="/home/aamir/certs/a1m918.crt",
+        ssl_keyfile="/home/aamir/certs/a1m918.key",
+    )
+
+
+# uvicorn main:app --host 192.168.0.27 --port 8900
